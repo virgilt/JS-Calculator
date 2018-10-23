@@ -1,19 +1,11 @@
 import React from 'react';
 
-const Display = ({display}) => {
-
-  let calcDisplay = display.map(displays => {
-    return (
-      <div>
-        <p>{displays.input}</p>
-        <h2>{displays.output}</h2>
-      </div>
-    )
-  })
+const Display = ({input, output, id}) => {
 
   return (
     <div>
-      {calcDisplay}
+      <p id={id}>{input}</p>
+      <h2>{output}</h2>
     </div>
   )
 }

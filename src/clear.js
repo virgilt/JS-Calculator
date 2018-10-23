@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Clear = ({clear}) => {
+const Clear = ({clear, clearDisplay}) => {
 
   let clearButton = clear.map(c => {
     return (
@@ -10,8 +10,13 @@ const Clear = ({clear}) => {
     )
   })
 
+  const handleClick = (event) => {
+    clearDisplay(0, 0);
+    document.getElementById('decimal').disabled = false;
+  }
+
   return (
-    <div>
+    <div onClick={handleClick}>
       {clearButton}
     </div>
   )

@@ -1,18 +1,16 @@
 import React from 'react';
 
-const Nums = ({nums}) => {
+const Nums = ({text, id, addInput}) => {
 
-  let numButtons = nums.map(num => {
-    return (
-        <button key={num.id} id={num.id}>
-          {num.text}
-        </button>
-    )
-  })
+  const handleClick = (event) => {
+    addInput(text);
+  }
 
   return (
-    <div>
-      {numButtons}
+    <div onClick={handleClick}>
+      <button id={id}>
+        {text}
+      </button>
     </div>
   )
 }

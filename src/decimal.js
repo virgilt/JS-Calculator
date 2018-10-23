@@ -1,18 +1,17 @@
 import React from 'react';
 
-const Decimal = ({decimal}) => {
+const Decimal = ({text, id, input, addInput}) => {
 
-  let decimalButton = decimal.map(dec => {
-    return (
-      <button key={dec.id} id={dec.id}>
-        {dec.text}
-      </button>
-    )
-  })
+  const handleClick = (event) => {
+    addInput(text);
+    document.getElementById('decimal').disabled = true;
+  }
 
   return (
-    <div>
-      {decimalButton}
+    <div onClick={handleClick}>
+      <button id={id}>
+        {text}
+      </button>
     </div>
   )
 }
