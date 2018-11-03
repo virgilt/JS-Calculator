@@ -14,8 +14,8 @@ const Operators = ({text, id, input, addInput, replaceOpInput}) => {
   }
 
   return (
-    <div onClick={handleClick}>
-      <button id={id}>
+    <div id={id} onClick={handleClick}>
+      <button className='operatorButtons' id={id}>
         {text}
       </button>
     </div>

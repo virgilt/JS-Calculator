@@ -7,8 +7,8 @@ const Nums = ({text, id, addInput}) => {
   }
 
   return (
-    <div onClick={handleClick}>
-      <button id={id}>
+    <div id={id} onClick={handleClick}>
+      <button className='numButtons' id={id}>
         {text}
       </button>
     </div>

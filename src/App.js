@@ -133,7 +133,7 @@ class App extends Component {
     })
 
     return (
-      <div className="App">
+      <div id="app">
         {display}
         <Clear clear={this.state.clear} clearDisplay={this.clearDisplay} />
         {decimal}

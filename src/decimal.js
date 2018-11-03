@@ -8,8 +8,8 @@ const Decimal = ({text, id, input, addInput}) => {
   }
 
   return (
-    <div onClick={handleClick}>
-      <button id={id}>
+    <div id='decimal' onClick={handleClick}>
+      <button className='decimalButton' id={id}>
         {text}
       </button>
     </div>

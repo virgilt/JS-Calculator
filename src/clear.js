@@ -4,7 +4,7 @@ const Clear = ({clear, clearDisplay}) => {
 
   let clearButton = clear.map(c => {
     return (
-      <button key={c.id} id={c.id}>
+      <button className='clearButton' key={c.id} id={c.id}>
         {c.text}
       </button>
     )
@@ -16,7 +16,7 @@ const Clear = ({clear, clearDisplay}) => {
   }
 
   return (
-    <div onClick={handleClick}>
+    <div id='clear' onClick={handleClick}>
       {clearButton}
     </div>
   )

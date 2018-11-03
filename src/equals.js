@@ -16,8 +16,8 @@ const Equals = ({text, id, input, equalDisplay}) => {
   }
 
   return (
-    <div onClick={handleClick}>
-      <button id={id}>{text}</button>
+    <div id='equals' onClick={handleClick}>
+      <button className='equalsButton' id={id}>{text}</button>
     </div>
   )
 }

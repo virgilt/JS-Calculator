@@ -1,1 +1,125 @@
+@import 'https://fonts.googleapis.com/css?family=Share+Tech+Mono';
+@import url(//db.onlinewebfonts.com/c/2d6cb0ab2a3bb39c8b6746a6aab1db0c?family=Digital2);
+body {
+  display: flex;
+  justify-content: center;
+}
+body #app {
+  margin-top: 30px;
+  padding: 10px;
+  background-color: #242424;
+  border: 1px solid #242424;
+  color: #fff;
+  box-shadow: 2px 2px 1px 1px #3D3D3D inset, -2px -2px 1px 1px #000 inset;
+  display: grid;
+  grid-template-columns: repeat(4, 85px);
+  grid-template-rows: repeat(6, 75px);
+  grid-template-areas: "display display display display" "clear clear divide multiply" "seven eight nine subtract" "four five six add" "one two three equals" "zero zero decimal equals";
+}
+body #app h2, body #app h4 {
+  flex-basis: 50%;
+  padding: 0;
+  margin: 2px;
+  align-self: flex-end;
+  font-family: Digital2;
+}
+body #app h2 {
+  font-size: 30px;
+}
+body #app h4 {
+  font-size: 20px;
+}
+body #app #output {
+  grid-area: display;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+body #app #header {
+  grid-area: header;
+}
+body #app #clear {
+  grid-area: clear;
+}
+body #app #divide {
+  grid-area: divide;
+}
+body #app #multiply {
+  grid-area: multiply;
+}
+body #app #seven {
+  grid-area: seven;
+}
+body #app #eight {
+  grid-area: eight;
+}
+body #app #nine {
+  grid-area: nine;
+}
+body #app #subtract {
+  grid-area: subtract;
+}
+body #app #four {
+  grid-area: four;
+}
+body #app #five {
+  grid-area: five;
+}
+body #app #six {
+  grid-area: six;
+}
+body #app #add {
+  grid-area: add;
+}
+body #app #one {
+  grid-area: one;
+}
+body #app #two {
+  grid-area: two;
+}
+body #app #three {
+  grid-area: three;
+}
+body #app #equals {
+  grid-area: equals;
+}
+body #app #zero {
+  grid-area: zero;
+}
+body #app #decimal {
+  grid-area: decimal;
+}
+body #app button {
+  width: 100%;
+  height: 100%;
+  border-right-color: #000;
+  border-top-color: #000;
+  border-left: none;
+  border-bottom: none;
+  outline: none;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 20px;
+}
+body #app button:hover {
+  transform: scale(1.02);
+  opacity: 0.8;
+}
+body #app .clearButton {
+  background-color: #FF7B27;
+  box-shadow: 2px 2px 1px 1px #FFA163 inset, -2px -2px 1px 1px #B24F0E inset;
+}
+body #app .operatorButtons {
+  background-color: #383838;
+  box-shadow: 2px 2px 1px 1px #636363 inset, -2px -2px 1px 1px #1C1C1C inset;
+  color: #fff;
+}
+body #app .numButtons, body #app .decimalButton {
+  background-color: #8B8B8B;
+  box-shadow: 2px 2px 1px 1px #B2B2B2 inset, -2px -2px 1px 1px #4F4F4F inset;
+}
+body #app .equalsButton {
+  background-color: #00ACB2;
+  box-shadow: 2px 2px 1px 1px #00F6FF inset, -2px -2px 1px 1px #008085 inset;
+}
 
+/*# sourceMappingURL=index.css.map */
